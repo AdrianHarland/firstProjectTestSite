@@ -17,4 +17,34 @@
   .text2 {
     padding-bottom: 30px;
   }
+
+  @media (max-width: 1250px) {
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .shrekAboutImg {
+      display: flex;
+      width: 100%;
+      max-width: 350px;
+      max-height: auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .houseImg {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 350px;
+      max-height: auto;
+    }
+    .SwampTourVid {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 350px;
+      max-height: auto;
+    }
+  }
 }

@@ -1,9 +1,15 @@
-.text {
+.contact-text {
   text-align: center;
   align-items: center;
   flex-direction: column;
   display: flex;
-  margin-top: 200px;
   color: green;
   font-style: italic;
+}
+
+@media (max-width: 1250px) {
+  .contact-text {
+    font-size: large;
+    overflow: hidden;
+  }
 }

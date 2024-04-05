@@ -5,7 +5,7 @@ import aexteriorSwamp from "../../assets/house/aexteriorSwamp.webp";
 const Home = () => {
   return (
     <AppLayout>
-      <div className="content">
+      <div className="content-home">
         <h1>The Swamp of Shrek is available to Rent</h1>
         <img src={aexteriorSwamp} className="mainImg" />
       </div>

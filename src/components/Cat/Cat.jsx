@@ -12,7 +12,6 @@ const Cat = () => {
     <AppLayout>
       <div className="content">
         <div className="content-cat">
-          hello
           <CatForm setCat={setCat} setLoading={setLoading} />
           <ImageReturn images={cats} loading={loading} />
         </div>

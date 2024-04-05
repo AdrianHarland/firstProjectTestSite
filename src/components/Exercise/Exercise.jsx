@@ -36,6 +36,7 @@ const Exercise = () => {
       <div className="content">
         <div className="content-exercise">
           <ExerciseForm setLoading={setLoading} setEx={setEx} />
+          e.g. A specific muscle group
           <ExReturn />
         </div>
       </div>
