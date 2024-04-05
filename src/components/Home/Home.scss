@@ -1,0 +1,23 @@
+.content {
+  h1 {
+    color: brown;
+  }
+
+  .mainImg {
+    margin-top: 100px;
+    justify-content: center;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
+@media (max-width: 1250px) {
+  .content {
+    justify-content: center;
+    .mainImg {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+}

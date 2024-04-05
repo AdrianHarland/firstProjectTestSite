@@ -1,0 +1,57 @@
+.header {
+  background-color: brown;
+}
+.App-logo {
+  &hover {
+    margin-top: 5px;
+  }
+}
+
+.logoMenu {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: brown;
+  img {
+    height: 50px;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      padding: 5px;
+      &:hover {
+        background-color: green;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .header {
+    .logoMenu {
+      flex-direction: column;
+      justify-content: center;
+      .menu {
+        margin: 5px;
+      }
+      ul {
+        flex-direction: column;
+        padding: 0;
+        display: none;
+        &.is-open {
+          display: block;
+        }
+      }
+    }
+  }
+}

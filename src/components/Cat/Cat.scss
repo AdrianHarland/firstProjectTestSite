@@ -1,0 +1,36 @@
+.grid-cat-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  position: relative;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.innerGridCat {
+  color: red;
+  font-weight: bold;
+  justify-content: end;
+  text-align: center;
+  font-size: larger;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1250px) {
+  .content-cat {
+    .grid-cat-container {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      border-bottom: 3px solid black;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .innerGridCat {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
