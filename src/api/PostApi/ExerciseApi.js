@@ -1,10 +1,10 @@
-export const fetchExercise = (muscle: string) => {
+export const fetchExercise = (muscle) => {
   const headers = {
     "Content-Type": "application/json",
-    "x-api-key": process.env.REACT_APP_EXERCISE_API_KEY || "",
+    "x-api-key": process.env.REACT_APP_EXERCISE_API_KEY,
   };
 
-  const requestOptions: RequestInit = {
+  var requestOptions = {
     method: "GET",
     headers: headers,
     redirect: "follow",

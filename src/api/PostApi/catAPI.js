@@ -1,10 +1,10 @@
-export const fetchCat = (breed: string) => {
+export const fetchCat = (breed) => {
   const headers = {
     "Content-Type": "application/json",
-    "x-api-key": process.env.REACT_APP_CAT_API_KEY || "",
+    "x-api-key": process.env.REACT_APP_CAT_API_KEY,
   };
 
-  const requestOptions: RequestInit = {
+  var requestOptions = {
     method: "GET",
     headers: headers,
     redirect: "follow",
