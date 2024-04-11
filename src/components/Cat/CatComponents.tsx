@@ -25,7 +25,7 @@ const CatComponent = ({ item }: CatTypes) => {
         <p>{item.breeds[0].description}</p>
         <p>
           The Average intelligence score is {item.breeds[0].intelligence} out of
-          ten
+          10
         </p>
         <p>{item.breeds[0].temperament}</p>
       </div>
