@@ -35,8 +35,9 @@ const Exercise = () => {
     <AppLayout>
       <div className="content">
         <div className="content-exercise">
+          Enter a specific muscle group to see a full list of workouts and
+          equipment
           <ExerciseForm setLoading={setLoading} setEx={setEx} />
-          e.g. A specific muscle group
           <ExReturn />
         </div>
       </div>
