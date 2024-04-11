@@ -2,9 +2,9 @@ import { useHeaderContext } from "../../contexts/HeaderContext";
 import "./BurgerMenu.scss";
 import React, { useState } from "react";
 
-function BurgerMenu() {
+function BurgerMenuToggle() {
   const { menu, setMenu } = useHeaderContext();
-  const toggleMenu = () => {
+  const toggleMenuOpen = () => {
     if (menu == "is-closed") {
       setMenu("is-open");
     } else {
@@ -13,7 +13,11 @@ function BurgerMenu() {
   };
 
   return (
-    <div id="hamburger" className={`hamburglar ${menu}`} onClick={toggleMenu}>
+    <div
+      id="hamburger"
+      className={`hamburglar ${menu}`}
+      onClick={toggleMenuOpen}
+    >
       <div className="burger-icon">
         <div className="burger-container">
           <span className="burger-bun-top"></span>
@@ -56,4 +60,4 @@ function BurgerMenu() {
   );
 }
 
-export default BurgerMenu;
+export default BurgerMenuToggle;

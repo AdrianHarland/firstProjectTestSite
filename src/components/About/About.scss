@@ -9,6 +9,7 @@
   .videoText {
     padding-bottom: 30px;
     padding-top: 15px;
+    max-width: fit-content;
   }
   .houseText {
     padding-bottom: 30px;
@@ -23,27 +24,25 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
     .shrekAboutImg {
       display: flex;
-      width: 100%;
-      max-width: 350px;
-      max-height: auto;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      width: max-content;
+      max-width: 450px;
+      padding-right: 35px;
     }
     .houseImg {
       display: flex;
       flex-direction: column;
-      width: 100%;
       max-width: 350px;
-      max-height: auto;
     }
     .SwampTourVid {
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-width: 350px;
+      max-width: 360px;
       max-height: auto;
     }
   }

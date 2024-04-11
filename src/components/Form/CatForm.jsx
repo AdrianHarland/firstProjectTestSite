@@ -25,9 +25,11 @@ const CatForm = ({ setCat, setLoading }) => {
     <form className="fields" onSubmit={handleSubmit}>
       <br />
       <label>
-        Cat:
+        <div>Cat Breed:</div>
         <input type="text" name="Cat" value={breed} onChange={handleChange} />
+        <p />
         <button type="submit">Submit</button>
+        <br />
       </label>
       <br />
     </form>
