@@ -4,7 +4,7 @@ export const getPosts = () => {
     .then((json) => json);
 };
 
-export const getSinglePost = (id) => {
+export const getSinglePost = (id: string) => {
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     .then((response) => response.json())
     .then((json) => json);

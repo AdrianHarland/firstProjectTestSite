@@ -1,5 +1,5 @@
 import shreksFace from "../../assets/shreksFace.png";
-import BurgerMenu from "../menu/BurgerMenu";
+import BurgerMenuToggle from "../menu/BurgerMenu";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
@@ -16,28 +16,42 @@ const Header = () => {
           </NavLink>
         </div>
         <div className="menu">
-          <BurgerMenu />
+          <BurgerMenuToggle />
           <ul className={menu}>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" onClick={BurgerMenuToggle}>
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact" onClick={BurgerMenuToggle}>
+                Contact
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/images">Images</NavLink>
+              <NavLink to="/images" onClick={BurgerMenuToggle}>
+                Images
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/news">News</NavLink>
+              <NavLink to="/news" onClick={BurgerMenuToggle}>
+                News
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/weather">Weather</NavLink>
+              <NavLink to="/weather" onClick={BurgerMenuToggle}>
+                Weather
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/cat">Cat</NavLink>
+              <NavLink to="/cat" onClick={BurgerMenuToggle}>
+                Cat
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/exercise">Exercise</NavLink>
+              <NavLink to="/exercise" onClick={BurgerMenuToggle}>
+                Exercise
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Carousel.scss";
 
-function Carousel({ images }) {
+function Carousel({ images }: any) {
   const [hat, setHat] = useState(0);
 
   const nextSlide = () => {

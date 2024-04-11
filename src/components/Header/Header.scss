@@ -16,7 +16,9 @@
   margin-right: 5%;
   background-color: brown;
   img {
-    height: 50px;
+    display: flex;
+    padding-top: 10px;
+    max-height: 65px;
   }
   ul {
     list-style-type: none;
@@ -40,7 +42,6 @@
   .header {
     .logoMenu {
       flex-direction: column;
-      justify-content: center;
       .menu {
         margin: 5px;
       }
@@ -49,7 +50,11 @@
         padding: 0;
         display: none;
         &.is-open {
-          display: block;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: inherit;
+          flex-wrap: wrap;
+          justify-content: center;
         }
       }
     }
